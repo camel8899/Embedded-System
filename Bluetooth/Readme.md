@@ -12,17 +12,17 @@ We use ADXL345 as our sensor.
 [4]:https://github.com/sandeepmistry/bleno
 
 ## Setups
-Connect ADXL345 to RPi, this will use as a BLE sensor</br>
-Put gatt.py script in BLE central</br>
-Put main.js, ADXL345.js, characteristic.js **and bleno** in the same directory in BLE sensor device</br>
-Make the BLE sensor scanable:
+1. Connect ADXL345 to RPi, this will use as a BLE sensor</br>
+2. Put gatt.py script in BLE central</br>
+3. Put main.js, ADXL345.js, characteristic.js **and bleno** in the same directory in BLE sensor device</br>
+4. Make the BLE sensor scanable:
 
     (sensor) $ sudo hciconfig hci0 up
     (sensor) $ sudo hciconfig hci0 leadv 0
-Make sure the BLE central can scan the sensor device, you should see the mac address of BLE sensor after you type:
+5. Make sure the BLE central can scan the sensor device, you should see the mac address of BLE sensor after you type:
 
     (central) $ sudo hcitool lescan
-Modify the bluetooth address of device in gatt.py
+6. Modify the bluetooth address of device in gatt.py line 3 
 
 ## Usage
 At sensor side:
