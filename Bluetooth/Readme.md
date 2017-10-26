@@ -14,7 +14,7 @@ We use ADXL345 as our sensor.
 ## Setups
 1. Connect ADXL345 to RPi, this will use as a BLE sensor
 2. Put gatt.py script in BLE central
-3. Put main.js, ADXL345.js, characteristic.js **and bleno** in the same directory in BLE sensor device
+3. Put main.js, ADXL345.js, characteristic.js **and bleno folder** in the same directory in BLE sensor device
 4. Make the BLE sensor scanable:
 ```
 (sensor) $ sudo hciconfig hci0 up
@@ -34,7 +34,7 @@ At sensor side:
 At central side:
 
     (central) $ sudo python gatt.py
-Then you can see the acceleration of x,y,z axis deteced by ADXL345 at BLE central, the unit is gravitational acceleration g.
+Then you can see the acceleration of x,y,z axis deteced by ADXL345 at BLE central, the unit is gravitational acceleration *g*.
 
 
  
